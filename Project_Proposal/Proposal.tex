@@ -23,7 +23,7 @@ Additionally, not a lot of students are confident about what they hope to accomp
 
 \section{Introduction}
 
-In one paragraph, explain the motivation for the question that you are trying to answer. 
+Long waitlists for CS graduate courses is the main motivation behind this proposal. With limited supply of professors and classrooms, it becomes a challenge to estimate a demand for courses mainly due to the fact that many students hope to register for courses that teach technologies currently in demand. Thus, we hope to automate the task of predicting demand based on past waitlists and current technologies. 
 
 In the second paragraph, describe any research or products that deal with similar questions or problems.  Make sure to cite all primary references, for example~\cite{einstein}.
 
@@ -33,11 +33,12 @@ In the third paragraph, explain how your project will differ from work described
 Explain in details how you will accomplish your goal.  Provide as many details on which tools will be used to collect the data; which programming language and modules will be used to build your agents.
 Include a detailed description of your agent by specifying the following:
 \subsection{Environment}
-What will be the expected environment in which your agent will operate?
+The expected environment in which the agent will operate will be San Jose State University. Specifically, the agent will operate on CS grad courses offered by the CS department at SJSU. 
 \subsection{Sensors}
 How will the Agent sense the percepts from the Environment
 \subsection{Percepts}
-Include and describe sample percept sequences
+Percepts will be passed to the agent, and these percepts represent the information regarding CS course topics or workshop topics. Example percepts include: 
+\{'information retrieval', 'decision analysis', 'machine learning'\}
 \subsection{Actuators}
 Describe which actuators will be used and what will be sent by the Agent back to the Environment.
 \subsection{Performance Measures}
