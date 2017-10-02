@@ -18,12 +18,16 @@ Include a 250 word (maximum) abstract that addresses the following questions:
 \item What performance measure will you use to analyze performance?
 \end{itemize}
 Every semester, approximately 5-10 students are waitlisted in popular computer science courses. 
+<<<<<<< HEAD
 Additionally, not a lot of students are confident about what they hope to accomplish by completing a course they register for. As the so-called "hot technologies" are constantly changing, students are seeking to enroll in such courses to help keep up with the technology. Thus, it would be useful to the students and the CS department at SJSU if they could get information about the top technologies as well as the predicted demand for future courses. In this paper, we propose a solution to the above problems by building an intelligent agent that can predict demand for CS graduate courses, suggest workshop topics, and list topics for CS 286 or CS 185C. We plan to collect information from professors, department chair, students, online course syllabi, education and training data from the Bureau of Labor and Statistics, and Glassdoor. If successful, our product could help the CS department predict course demand, get an insight into popular CS topics, and it could help CS graduate students make better course choices and help prepare for their career. In order to measure our agent's performance, we 
+=======
+Additionally, not a lot of students are confident about what they hope to accomplish by completing a course they register for. As the so-called "hot technologies" are constantly changing, students are seeking to enroll in such courses to help keep up with the technology. Thus, it would be useful to the students and the CS department at SJSU if they could get information about the top technologies as well as the predicted demand for future courses. We propose a solution to the above problems by building an intelligent agent that can predict demand for CS graduate courses, suggest workshop topics, and list topics for CS 286 or CS 185C. We plan to collect information from professors, department chair, students, online course syllabi, education and training data from the Bureau of Labor and Statistics, and Glassdoor. If successful, our product could help the CS department predict course demand, get an insight into popular CS topics, and it could help CS graduate students make better course choices and help prepare for their career. In order to measure our agent's performance, we 
+>>>>>>> b03c5032f977f48c7c12f07b2297b1b68c844f20
 \end{abstract}
 
 \section{Introduction}
 
-In one paragraph, explain the motivation for the question that you are trying to answer. 
+Long waitlists for CS graduate courses is the main motivation behind this proposal. With limited supply of professors and classrooms, it becomes a challenge to estimate a demand for courses mainly due to the fact that many students hope to register for courses that teach technologies currently in demand. Thus, we hope to automate the task of predicting demand based on past waitlists and current technologies. 
 
 In the second paragraph, describe any research or products that deal with similar questions or problems.  Make sure to cite all primary references, for example~\cite{einstein}.
 
@@ -33,6 +37,7 @@ In the third paragraph, explain how your project will differ from work described
 Explain in details how you will accomplish your goal.  Provide as many details on which tools will be used to collect the data; which programming language and modules will be used to build your agents.
 Include a detailed description of your agent by specifying the following:
 \subsection{Environment}
+<<<<<<< HEAD
 What will be the expected environment in which your agent will operate?
 Web scraping for gathering information about job market and industry trends in Computer Science, will give us broader perspective of what curriculum and courses must be offered in University for MS CS.
 Environment will be responsible for:
@@ -44,15 +49,23 @@ iv) Environment will create a mapping of these trends and their respective skill
 v) Trending topics will be clustered based on similarity of their skillset.
 vi) Each cluster will give rise to a potential new course topic for CS 286 or CS 185C. 
 
+=======
+The expected environment in which the agent will operate will be San Jose State University. Specifically, the agent will operate on CS grad courses offered by the CS department at SJSU. 
+>>>>>>> b03c5032f977f48c7c12f07b2297b1b68c844f20
 \subsection{Sensors}
 How will the Agent sense the percepts from the Environment
 
 
 \subsection{Percepts}
+<<<<<<< HEAD
 Include and describe sample percept sequences
 To find topics with similar skillsets, agent will receive skillsets mapped to trending topics as a percept.
 To find N high demand courses, agent will receive percepts as average number of wait-listed students for a particular course and course's value in market.
 
+=======
+Percepts will be passed to the agent, and these percepts represent the information regarding CS course topics or workshop topics. Example percepts include: 
+\{'information retrieval', 'decision analysis', 'machine learning'\}
+>>>>>>> b03c5032f977f48c7c12f07b2297b1b68c844f20
 \subsection{Actuators}
 Describe which actuators will be used and what will be sent by the Agent back to the Environment.
 \subsection{Performance Measures}
@@ -63,6 +76,8 @@ Describe in detail how you will test/evaluate your project.
 If the project is technology-driven, it must be tested with real users to obtain performance measures.  E.g. if you are developing a mobile app for building custom-made online boot camps for technical skills, it must be tested with at least 10 different users to collect feedback on your new technology.
 
 If you are doing programming-driven project, describe in details the data sets which will be used and make sure to provide citations to the original source, such as~\cite{knuthwebsite}. 
+
+We will thoroughly test our application during the last two weeks before our final project deliverable. During this test phase, our team will test the project after which our users will test it. These users will consist of students and professors, and we will collect feedback on our application. 
 
 \bibliography{Proposal} 
 \bibliographystyle{ieeetr}
