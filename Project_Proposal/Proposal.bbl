@@ -1,8 +1,12 @@
 \begin{thebibliography}{1}
 
-\bibitem{einstein}
-A.~Einstein, ``{Zur Elektrodynamik bewegter K{\"o}rper}. ({German}) [{On} the
-  electrodynamics of moving bodies],'' {\em Annalen der Physik}, vol.~322,
-  no.~10, pp.~891--921, 1905.
+\bibitem{mitchell2015web}
+R.~Mitchell, {\em Web scraping with Python: collecting data from the modern
+  web}.
+\newblock " O'Reilly Media, Inc.", 2015.
+
+\bibitem{robert2009introduction}
+Y.~Robert and F.~Vivien, {\em Introduction to scheduling}.
+\newblock CRC Press, 2009.
 
 \end{thebibliography}

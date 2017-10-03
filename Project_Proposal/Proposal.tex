@@ -7,27 +7,23 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Every semester, approximately 5-10 students are waitlisted in popular computer science courses. Additionally, not a lot of students are confident about what they hope to accomplish by completing a course they register for. As the so-called "hot technologies" are constantly changing, students are seeking to enroll in such courses to help keep up with the technology. Thus, it would be useful to the students and the CS department at SJSU if they could get information about the top technologies as well as the predicted demand for future courses. Our method is technology-based, and we propose a solution to the above problems by building an intelligent agent that can predict demand for CS graduate courses, suggest workshop topics, and list topics for CS 286 or CS 185C. We plan to collect information from professors, department chair, students, online course syllabi, education and training data from the Bureau of Labor and Statistics, and Glassdoor. If successful, our product could help the CS department predict course demand, get an insight into popular CS topics, and it could help CS graduate students make better course choices and help prepare for their career. 
+Every semester, approximately 5-10 students are waitlisted in popular computer science courses. As the so-called "hot technologies" are constantly changing, students are seeking to enroll in such courses to help keep up with the technology. Thus, it would be useful to the students and the CS department at SJSU if they could get information about the top technologies as well as the predicted demand for future courses. Our method is technology-based, and we propose a solution by building an intelligent agent that can predict demand for CS graduate courses, suggest workshop topics, and list topics for CS 286 or CS 185C. We plan to collect information from professors, department chair, students, online course syllabi, education and training data from the Bureau of Labor and Statistics, and Glassdoor. If successful, our product could help the CS department predict course demand, get an insight into popular CS topics, and it could help CS graduate students make better course choices and help prepare for their career. In order to measure our agent's performance, we will ask our experts to gauge the effectiveness of the agent's output. 
 \end{abstract}
 
 \section{Introduction}
 
-Long waitlists for CS graduate courses is the main motivation behind this proposal. With limited supply of professors and classrooms, it becomes a challenge to estimate a demand for courses mainly due to the fact that many students hope to register for courses that teach technologies currently in demand. Thus, we hope to automate the task of predicting demand based on past waitlists and current technologies. 
+Long waitlists for CS graduate courses is the main motivation behind this proposal. With limited supply of professors and classrooms, it becomes a challenge to estimate a demand for courses mainly due to the fact that many students hope to register for courses that teach technologies currently in demand. 
 
+As per our research, there does not exist a product similar to what we are building. 
 
+Thus, we hope to automate the task of predicting demand based on past waitlists and current technologies. 
 
- 
 
 \section{Materials and Methods}
-Knowing job market and industry trends in Computer Science, will give us a broader idea of the curriculum and courses to be offered at San Jose State University for MS CS. All project related tasks will be done in Python. \\
+Knowing job market and industry trends in Computer Science will give us a broader idea of the curriculum and courses to be offered at San Jose State University for MS CS. All project related tasks will be done in Python. \\
 Environment will be responsible for: \\
-1. Web scraping to gather information about job market, industry trends, and hot research topics in Computer Science \\
-2. Gathering and analyzing information regarding popularity of a course based on number of waitlisted students in the past. \\
-3. Gathering top trending courses offered in top 20 universities in the US. \\
-4. Outcomes of above steps i.e., trending technologies or topics (which could be possible new courses), will have a corresponding set of skills associated with it. 
-5. Create a mapping of trends and their respective skills, which will act as a training dataset for the actuator. \\
-6. Cluster trending topics based on the similarity of skill sets. \\
-7. Each cluster will give rise to a potential new course topic for CS 286 or CS 185C. 
+1. Web scraping to gather information about job market, industry trends, and hot research topics in Computer Science \cite{mitchell2015web}\\
+2. Gathering information regarding popularity of a course based on past course statistics \cite{robert2009introduction} \\
 
 \subsection{Environment}
 The expected environment in which the agent will operate will be San Jose State University. Specifically, the agent will operate on CS grad courses offered by the CS department at SJSU. 
@@ -37,20 +33,18 @@ Web scraped and cleaned information will be turned into meaningful data which wi
 Agent will be served percepts from the Environment by fetching the data stored in datasets. 
 
 \subsection{Percepts}
-Agent will receive skill sets mapped to trending topics as a percept. In order to find N high demand courses, agent will receive percepts like, N, average number of wait-listed students for a particular course and course's value in market. Example percepts include: 
+Agent will receive skill sets mapped to trending topics as a percept. Example percept includes: 
 \{'information retrieval', 'decision analysis', 'machine learning'\}
 
 \subsection{Actuators}
 Actuators will send back the list of courses along with their weight (demand percentage) back to the Environment. It will also send back the workshops, in case it finds out the need for a workshop based on the demand.
 
 \subsection{Performance Measures}
-1. List of courses generated by recommendation service can be compared with the manual course schedule prepared by planning committee.\\
+1. List of courses generated by recommendation service can be compared to the manual course schedule prepared by planning committee.\\
 2. Comparing predicted demand of a course with actual demand seen semester over semester.\\
-3. Analyze trends in enrollment percentage for predicted courses.\\
-4. Analyze number of students who successfully completed/passed/failed/dropped the predicted course.\\ 
 
 \section{Experiments}
-We will thoroughly test our application during the last two weeks before our final project deliverable. During this test phase, our team will test the project after which our users will test it. These users will consist of students and professors, and we will collect feedback on our application. Along with surveys, we will use student reviews to improve the accuracy of our prediction. In our application, we plan to include a feedback survey after the user uses the application. 
+During the testing phase, our team will test the project after which our users will test it. These users will consist of students and professors, and we will collect feedback for our application. In our application, we plan to include a feedback survey after the user uses the application. 
 
 \bibliography{Proposal} 
 \bibliographystyle{ieeetr}
