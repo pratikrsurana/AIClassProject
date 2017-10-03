@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.2)  2 OCT 2017 18:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.2)  2 OCT 2017 20:31
 entering extended mode
 **./Proposal.tex
 (Proposal.tex
@@ -68,7 +68,7 @@ Overfull \hbox (83.66647pt too wide) in paragraph at lines 53--56
  []
 
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 69.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 71.
 [3] (Proposal.bbl) [4] (Proposal.aux) ) 
 Here is how much of TeX's memory you used:
  267 strings out of 493323
@@ -95,7 +95,7 @@ u/Programs/MikTex2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/ProgramData/M
 icrosoft/Windows/Start Menu/Programs/MikTex2.9/fonts/type1/public/amsfonts/cm/c
 msy9.pfb><C:/ProgramData/Microsoft/Windows/Start Menu/Programs/MikTex2.9/fonts/
 type1/public/amsfonts/cm/cmti10.pfb>
-Output written on Proposal.pdf (4 pages, 154420 bytes).
+Output written on Proposal.pdf (4 pages, 154611 bytes).
 PDF statistics:
  63 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
